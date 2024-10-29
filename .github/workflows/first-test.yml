@@ -8,10 +8,10 @@ jobs:
   first-workflow-job: 
     name: first-job
     runs-on: ubuntu-latest
-    run: ls
 
     steps:
       - name: run bash command
-        run: echo "first workflow"
-        run: ls
+        run: |
+          echo "first workflow"
+          ls
         shell: bash
